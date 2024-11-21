@@ -1,0 +1,19 @@
+
+This section uses `quarto`'s conditional formatting to include an iframe map and html table when the output is a website
+
+::: {.content-visible when-format="html" #tbl-sdtable}
+
+<iframe width="780" height="500" src="../data/sdmap.html"></iframe>
+{{< include _table_sd_table.html >}}
+
+
+:::
+
+or a static image and latex table when the output is a pdf
+
+::: {.content-visible when-format="pdf" #tbl-sdtable}
+![SD Map](_fig_sdmap.png)
+
+{{< include _table_sd_table.md >}}
+
+:::

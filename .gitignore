@@ -1,0 +1,9 @@
+.pixi/
+data/
+paper/.quarto
+paper/site_libs
+paper/index_files
+notebooks/.ipynb_checkpoints
+output/_tex/
+output/site_libs
+pixi.lock

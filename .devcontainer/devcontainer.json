@@ -1,0 +1,39 @@
+{
+  "name": "rypyr",
+
+  "build": {
+    "dockerfile": "Dockerfile",
+
+    "context": ".."
+  },
+
+  "customizations": {
+    "vscode": {
+      "settings": {},
+
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.black-formatter",
+        "ms-python.isort",
+        "ms-toolsai.jupyter-renderers",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.vscode-jupyter-cell-tags",
+        "charliermarsh.ruff",
+        "GitHub.copilot",
+        "njpwerner.autodocstring",
+        "streetsidesoftware.code-spell-checker"
+      ]
+    }
+  },
+
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+
+  "mounts": [
+    "source=${localWorkspaceFolderBasename}-pixi,target=${containerWorkspaceFolder}/.pixi,type=volume"
+  ],
+
+  "postCreateCommand": "sudo chown vscode .pixi && pixi install"
+}

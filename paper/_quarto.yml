@@ -1,0 +1,18 @@
+project:
+  type: manuscript
+  output-dir: ../output
+  render:
+    - "../notebooks/"
+    - "*.qmd"
+
+manuscript:
+  article: index.qmd
+
+format:
+  pdf:
+    output-file: rypyr
+  html: default
+
+execute:
+  echo: true
+jupyter: python3

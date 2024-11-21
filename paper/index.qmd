@@ -1,0 +1,68 @@
+---
+title: A Reproducible Paper
+subtitle: 'Using `pixi` and `quarto` and codespaces to handle environments and execution'
+short-title: Reproducible papers with quarto and pixi
+published: "Under review at *Github*"
+code-repo: "Access the code, data, and analysis at <https://github.com/knaaptime/rypyr>"
+correspondence-prefix: "Correspondence concerning this article should be addressed to"
+author:
+  - name: Elijah Knaap
+    email: eknaap@sdsu.edu
+    orcid: 0000-0001-7520-2238
+    title: Senior Research Scientist and Associate Director
+    affiliations: 
+      - id: cogs
+        name: San Diego State University
+        department: Center for Open Geographical Science
+        address: 5500 Campanile Drive
+        city: San Diego
+        region: CA
+        country: USA
+        postal-code: 92182
+    attributes:
+      corresponding: true
+  - name: Another Person
+    title: Doctoral Candidate
+    affiliations:
+      - ref: cogs
+abstract: |
+  This project shows how to generate a reproducible environment and execute an
+  entire analysis (including building the paper) via github codespaces.
+
+thanks: |
+  This project is supported by the National Science Foundation Grant #2345820: An Open Source Ecosystem for Spatial Data Science.
+additional-info: |
+  We have no known conflict of interest to disclose.
+keywords:
+  - reproducibility
+  - open science
+date: today  # pin to a real date when 'final'
+bibliography: references.bib  # export this with zotero better-bibtex to keep shared lib in sync with collaborators
+---
+
+# Introduction
+
+{{< include _dft_intro.qmd >}}
+
+# Literature Review
+
+{{< include _dft_lit_review.qmd >}}
+
+# Methods
+
+{{< include _dft_methods.qmd >}}
+
+# Results
+
+{{< include _dft_results.qmd >}}
+
+# Discussion
+
+{{< include _dft_discussion.qmd >}}
+
+# Conclusion
+
+{{< include _dft_conclusion.qmd >}}
+
+# References
+

@@ -1,0 +1,22 @@
+Two classic models in spatial analysis are the *Spatial Lag Model*, defined as
+
+$$y = \rho Wy + \beta X + \epsilon$$
+
+and the *Spatial Error Model* defined as
+
+<!-- use html comments for in-text notes.
+
+You can dropdown to real latex any time you need to. If necessary,
+add the library in the `header-includes` section of the quarto yaml
+
+for example if you needed aligned equations, you can `split` with ampersands
+where you want to set the alignment
+
+-->
+
+$$
+\begin{split}
+y & = \beta X + u\\
+u & = \lambda W u + \epsilon
+\end{split}
+$$
