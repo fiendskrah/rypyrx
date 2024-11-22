@@ -11,7 +11,8 @@ manuscript:
 format:
   pdf:
     output-file: rypyr
-  html: default
+  html:     
+    embed-resources: true
 
 execute:
   echo: true

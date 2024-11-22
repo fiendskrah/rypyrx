@@ -24,6 +24,7 @@ edit the notebooks as you like
 
 ## Execute and Build
 
+`cd paper`
 `pixi run quarto render`
 
 will run the python and r noteooks and generate the html and pdf in `output/`
