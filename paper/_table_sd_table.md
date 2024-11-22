@@ -1,8 +1,10 @@
 \begin{longtable}{lrr}
+\caption{Blockgroups in San Diego} \\
 \toprule
  & n-total-pop & median-household-income \\
 \midrule
 \endfirsthead
+\caption[]{Blockgroups in San Diego} \\
 \toprule
  & n-total-pop & median-household-income \\
 \midrule

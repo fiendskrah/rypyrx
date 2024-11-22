@@ -1,19 +1,36 @@
 
-This section uses `quarto`'s conditional formatting to include an iframe map and html table when the output is a website
+This section uses `quarto`'s conditional formatting to swap out the correct
+table depending out output. The problem here is `pandas` can write nice latex
+tables, but those don't convert to html. Instead you can just write both formats
+out to file and select the correct one on-demand.
 
 ::: {.content-visible when-format="html" #tbl-sdtable}
-
-<iframe width="780" height="500" src="../data/sdmap.html"></iframe>
 {{< include _table_sd_table.html >}}
-
-
+Blockgroups in San Diego
 :::
-
-or a static image and latex table when the output is a pdf
-
-::: {.content-visible when-format="pdf" #tbl-sdtable}
-![SD Map](_fig_sdmap.png)
 
 {{< include _table_sd_table.md >}}
 
+You can also do the same thing with figures, e.g. to swap in an interactive map
+in the html output and use a static map in the pdf.
+
+<!-- use html comments to write private notes in the text -->
+
+![California Counties](_fig_ggmap.png){#fig-counties width=60%}
+
+Everyone from the `R` world will recognize this figure as coming from `ggplot`. It shows up either way. But the blockgroups in San Diego show up differently depending on the output.
+
+::: {.content-visible when-format="pdf"}
+![SD Map](_fig_sdmap.png){#fig-sdmap}
+:::
+
+::: {.content-visible when-format="html" #fig-sdmap}
+<iframe width="780" height="500" src="../data/_fig_sdmap.html"></iframe>
+:::
+
+::: {.callout-note}
+This is kinda hacky because it relies on an iFrame that requires the embedded
+map to be available the relative URL set above (you cant download this html file
+and expect it to work). The `embed-resources` option in quarto wont work for an
+iframe either.
 :::

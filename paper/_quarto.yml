@@ -11,9 +11,8 @@ manuscript:
 format:
   pdf:
     output-file: rypyr
-  html:     
-    embed-resources: true
-
+  html: default
 execute:
   echo: true
+  cache: true
 jupyter: python3

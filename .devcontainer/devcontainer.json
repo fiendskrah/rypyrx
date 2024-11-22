@@ -22,7 +22,13 @@
         "charliermarsh.ruff",
         "GitHub.copilot",
         "njpwerner.autodocstring",
-        "streetsidesoftware.code-spell-checker"
+        "streetsidesoftware.code-spell-checker",
+        "reditorsupport.r",
+        "mathematic.vscode-pdf",
+        "quarto.quarto",
+        "shd101wyy.markdown-preview-enhanced",
+        "notzaki.pandocciter"
+
       ]
     }
   },
