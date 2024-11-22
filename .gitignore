@@ -6,3 +6,4 @@ paper/index_files
 notebooks/.ipynb_checkpoints
 output/*
 pixi.lock
+paper/_manuscript

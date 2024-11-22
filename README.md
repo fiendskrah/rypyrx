@@ -35,5 +35,7 @@ edit the notebooks as you like
 `cd paper`
 `pixi run quarto render`
 
-will run the python and r noteooks and generate the html and pdf in `output/`
+will run the python and r noteooks and generate the html and pdf in `paper/_manuscript`
+
+you can use `pixi run quarto preview` to preview while you work
 
