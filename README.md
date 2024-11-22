@@ -17,16 +17,26 @@ tl;dr: I write in quarto and do my work in both python and R. But lots of people
 
 ## Install and Run
 
+To run locally:
+
+- clone this repository, follow below
+
+To run in codespaces:
+
+- click the 'open in codespaces' button above
+- crank the machine to 4gb (not strictly necessary but you'll want more than 2gb)
+![VM size](docs/cores.png)
+
+
+
 `pixi install`
 
-(not strictly necessary, but its better to launch jlab from inside the notebooks dir)
-
-`cd notebooks`
+`cd notebooks` (not strictly necessary, but its better to launch jlab from inside the notebooks dir)
 `pixi run jupyter lab`
 
 if running in a codespace this starts a jupyter server on the VM's 'localhost'.
 Open an existing notebook (or start a new one). When selecting a kernel, choose
-'Existing jupyter server' and put in 127.0.0.1 as the host
+'Existing jupyter server' and copy/paste the URL with token from the terminal
 
 edit the notebooks as you like
 
