@@ -1,6 +1,5 @@
 project:
   type: manuscript
-  output-dir: ../output
   render:
     - "../notebooks/"
     - "*.qmd"

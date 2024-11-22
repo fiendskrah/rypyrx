@@ -25,7 +25,7 @@ Everyone from the `R` world will recognize this figure as coming from `ggplot`. 
 :::
 
 ::: {.content-visible when-format="html" #fig-sdmap}
-<iframe width="780" height="500" src="../data/_fig_sdmap.html"></iframe>
+<iframe width="780" height="500" src="_fig_sdmap.html"></iframe>
 :::
 
 ::: {.callout-note}
