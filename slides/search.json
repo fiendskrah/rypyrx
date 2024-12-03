@@ -4,7 +4,7 @@
     "href": "index.html#what-tldr",
     "title": "Reproducible Research Environments",
     "section": "what (tl;dr)",
-    "text": "what (tl;dr)\n\nthis repo demonstrates a reproducible research project that can (should!) run anywhere, including just in a github codespaces instance (coding on your ipad!)\nthis also works nicely for teaching workshops\nthe bones are just pixi and quarto\nthe magic is the .devcontainer and .github configuration files"
+    "text": "what (tl;dr)\nhttps://github.com/knaaptime/rypyrx\n\nthis repo demonstrates a reproducible research project that can (should!) run anywhere, including just in a github codespaces instance (coding on your ipad!)\nthis also works nicely for teaching workshops\nthe bones are just pixi and quarto\nthe magic is the .devcontainer and .github configuration files"
   },
   {
     "objectID": "index.html#end-result",
@@ -74,7 +74,7 @@
     "href": "index.html#run-jupyter",
     "title": "Reproducible Research Environments",
     "section": "run jupyter",
-    "text": "run jupyter\n\ncd notebooks\npixi run jupyter lab"
+    "text": "run jupyter\npixi run jupyter lab"
   },
   {
     "objectID": "index.html#edit-notebooks",
@@ -102,7 +102,7 @@
     "href": "index.html#generate-the-paper",
     "title": "Reproducible Research Environments",
     "section": "generate the paper",
-    "text": "generate the paper\n\ncd paper\npixi run quarto render"
+    "text": "generate the paper\n\nedit stuff in the paper directory\npixi run quarto render paper"
   },
   {
     "objectID": "index.html#output",
@@ -137,7 +137,7 @@
     "href": "index.html#edit-the-slides",
     "title": "Reproducible Research Environments",
     "section": "edit the slides",
-    "text": "edit the slides\nthe slides directory is another standalone quarto project\n\ncd slides\nedit the index.qmd file\npixi run quarto render"
+    "text": "edit the slides\nthe slides directory is another standalone quarto project\n\nedit the index.qmd file in slides\npixi run quarto render slides"
   },
   {
     "objectID": "index.html#commit-the-directory",

@@ -30,6 +30,8 @@ date: today  # fix to a real date when final
 
 ## what (tl;dr) {.smaller}
 
+<https://github.com/knaaptime/rypyrx>
+
 - this repo demonstrates a reproducible research project that can (should!) run anywhere, including just in a github codespaces instance (coding on your ipad!)
 - this also works nicely for teaching workshops
 - the bones are just `pixi` and `quarto`
