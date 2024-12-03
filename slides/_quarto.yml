@@ -1,0 +1,11 @@
+project:
+  type: website
+  output-dir: "." # publish from root of this dir
+format:
+  html:
+    embed-resources: true
+    theme: 
+      light: 
+        - flatly
+      dark: 
+        - cyborg

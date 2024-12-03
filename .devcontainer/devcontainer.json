@@ -1,16 +1,12 @@
 {
-  "name": "rypyr",
-
+  "name": "rypyrx",
   "build": {
     "dockerfile": "Dockerfile",
-
     "context": ".."
   },
-
   "customizations": {
     "vscode": {
       "settings": {},
-
       "extensions": [
         "ms-python.python",
         "ms-python.vscode-pylance",
@@ -28,18 +24,17 @@
         "quarto.quarto",
         "shd101wyy.markdown-preview-enhanced",
         "notzaki.pandocciter"
-
       ]
     }
   },
-
+  "hostRequirements": {
+    "memory": "4gb"
+  },
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   },
-
   "mounts": [
     "source=${localWorkspaceFolderBasename}-pixi,target=${containerWorkspaceFolder}/.pixi,type=volume"
   ],
-
   "postCreateCommand": "sudo chown vscode .pixi && pixi install"
 }

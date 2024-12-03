@@ -1,0 +1,30 @@
+---
+title: "Reproducible Research Environments"
+subtitle: "cross language & cross platform"
+author:
+  - name: Eli Knaap
+    orcid: 0000-0001-7520-2238
+    email: eknaap@sdsu.edu
+    affiliations: San Diego State University
+# title-slide-attributes:
+#     data-background-image: ../paper/figures/cogs_logo.png
+#     data-background-size: 400px 
+format:
+  revealjs:
+    footer: "Elijah Knaap, Center for Open Geographical Science @ SDSU"
+    self-contained: true
+    embed-resources: true
+    self-contained-math: true
+date: today 
+---
+
+# why
+
+# setup
+
+# run
+
+# write
+
+# publish
+

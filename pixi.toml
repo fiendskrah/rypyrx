@@ -2,7 +2,7 @@
 channels = ["conda-forge", "r", "main"]
 description = "A demo project using quarto and pixi for full-stack reproducibility"
 name = "rypyr"
-platforms = ["linux-64", "win-64", "osx-64"] # I left osx-arm because theres no r-satellite <https://pixi.sh/v0.27.1/reference/project_configuration/#the-project-table>
+platforms = ["linux-64", "win-64", "osx-64", "linux-aarch64"] # I left out osx-arm because theres no r-satellite build <https://pixi.sh/v0.27.1/reference/project_configuration/#the-project-table>
 version = "0.1.0"
 
 [tasks]
@@ -34,7 +34,7 @@ rpy2 = "*"
 # R deps
 r-irkernel = "*"
 r-tidymodels = "*"
-#r-spdep = "*" # sfdep hasn't made it onto conda-forge yet
+#r-spdep = "*"  # sfdep hasn't made it onto conda-forge yet
 r-nlme = "*"
 r-lme4 = "*"
 r-tidycensus = "*"
@@ -43,3 +43,4 @@ r-reticulate = "*"
 r-mapview = "*" 
 r-languageserver = "*"
 r-tinytex = "*"
+r-devtools = "*"  # use install.packages() to get whatever, but you wont have a lockfile for those
