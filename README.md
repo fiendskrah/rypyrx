@@ -35,10 +35,8 @@ To run in codespaces:
 - click the 'open in codespaces' button above
   - the default config will include at least 4 cores (dont go below 16gb memory), but you can crank it up for better performance
 
-`pixi install`
-
-`cd notebooks` (not strictly necessary, but its better to launch jlab from inside the notebooks dir)
-`pixi run jupyter lab`
+- `pixi install`
+- `pixi run jupyter lab`
 
 if running in a codespace this starts a jupyter server on the VM's 'localhost'.
 Open an existing notebook (or start a new one). When selecting a kernel, choose
@@ -48,8 +46,7 @@ edit the notebooks as you like
 
 ## Execute and Build
 
-`cd paper`  
-`pixi run quarto render`
+`pixi run quarto render paper`
 
 will run the python and r noteooks and generate the html and pdf in `paper/_manuscript`
 
@@ -57,5 +54,13 @@ will run the python and r noteooks and generate the html and pdf in `paper/_manu
 
 `pixi run quarto render --pdf-engine tectonic`
 
-you can use `pixi run quarto preview` to preview while you work
+you can use `pixi run quarto preview paper` to preview while you work
 
+## Build slides
+
+if you want to publish slides (or make the manuscript public):
+
+- go to the repository settings, then 'pages', then select 'github actions'
+  - don't change anything else, the config file is already there
+- edit the files in `slides/` (or cp the manuscript files there)
+- `pixi run quarto render slides`

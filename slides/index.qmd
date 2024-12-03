@@ -107,8 +107,7 @@ I like jupyter notebooks for doing my main analysis
 
 ## run jupyter
 
-- `cd notebooks`
-- `pixi run jupyter lab`
+`pixi run jupyter lab`
 
 
 ## edit notebooks
@@ -136,8 +135,8 @@ I use a single index.qmd file as the main source document, then include each sec
 
 ## generate the paper
 
-- `cd paper`
-- `pixi run quarto render`
+- edit stuff in the `paper` directory
+- `pixi run quarto render paper`
 
 ## output {.smaller}
 
@@ -174,9 +173,8 @@ the config file is already setup. You're done.
 
 the `slides` directory is another standalone `quarto` project
 
-- `cd slides`
-- edit the index.qmd file
-- `pixi run quarto render`
+- edit the `index.qmd` file in `slides`
+- `pixi run quarto render slides`
 
 ## commit the directory {.smaller}
 

@@ -18,7 +18,13 @@ in the html output and use a static map in the pdf.
 
 ![California Counties](_fig_ggmap.png){#fig-counties width=60%}
 
-Everyone from the `R` world will recognize this figure as coming from `ggplot`. It shows up either way. But the blockgroups in San Diego show up differently depending on the output.
+Everyone from the `R` world will recognize t@fig-counties as coming from
+`ggplot`. It shows up either way. But the blockgroups in San Diego show up
+differently depending on the output.
+
+Here is a map showing the spatial graph of blockgroups in San Diego using a Rook
+contiguity rule. But @fig-sdmap shows up differently depending on the output,
+thanks to quarto's conditional include syntax (awesome).
 
 ::: {.content-visible when-format="pdf"}
 ![SD Map](_fig_sdmap.png){#fig-sdmap}
@@ -34,3 +40,7 @@ map to be available the relative URL set above (you cant download this html file
 and expect it to work). The `embed-resources` option in quarto wont work for an
 iframe either.
 :::
+
+In the end, we seamlessly weave together `geosnap` [@knaap2024GeosnapGeospatial],
+PySAL [@rey2021PySALEcosystem], and `tidycensus` [@tidycensus]. Use the best tool
+for the job, then let quarto sew things together.

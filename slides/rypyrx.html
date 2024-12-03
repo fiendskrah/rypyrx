@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.39">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -24,7 +24,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/clipboard/clipboard.min.js"></script>
@@ -33,10 +53,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-81e35ebdb4125010edbabe6010586085.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -83,6 +103,11 @@ entire analysis (including building the paper) via github codespaces.
 <meta name="citation_year" content="2024">
 <meta name="citation_online_date" content="2024-12-03">
 <meta name="citation_language" content="en">
+<meta name="citation_reference" content="citation_title=Spatial Econometrics: Methods and Models;,citation_abstract=Graduate-level textbook in spatial statistics, econometrics, and regional analysis concentrates on the relevance of spatial effects to general issues of model specification, estimation, and other inference, taking a model-driven rather than a data-driven approach. Includes new methods and findings, and many new empirical examples. Introduces the formal probabilistic framework for the analysis of spatial processes. Covers estimation and hypothesis testing, discussing situations where the data are characterized by spatial dependence, the data are characterized by spatial heterogeneity, and where a time-space model is used. Outlines methodological problems arising in estimation and hypothesis testing. Provides an extensive empirical illustration for the various estimators and tests. Examines issues of model validation, discussing two types of specification tests: tests on spatial common factors and tests on non-nested hypotheses. Discusses model selection in spatial econometric models. Suggests directions for future research. Anselin is with the Department of Geography and Economics at the University of California, Santa Barbara. Index.;,citation_author=Luc Anselin;,citation_publication_date=1988;,citation_cover_date=1988;,citation_year=1988;,citation_fulltext_html_url=http://www.amazon.com/Spatial-Econometrics-Methods-Operational-Regional/dp/9024737354;,citation_doi=10.1007/978-94-015-7799-1;,citation_isbn=978-90-481-8311-1;,citation_issn=00130095;,citation_volume=4;,citation_book_title=Operational Regional Science Series;">
+<meta name="citation_reference" content="citation_title=What is special about spatial data?: Alternative perspectives on spatial data analysis;,citation_author=Luc Anselin;,citation_publication_date=1989;,citation_cover_date=1989;,citation_year=1989;,citation_fulltext_html_url=https://escholarship.org/uc/item/3ph5k0d4;,citation_journal_title=Santa Barbara, CA, NCGIA Report;">
+<meta name="citation_reference" content="citation_title=Geosnap: The Geospatial Neighborhood Analysis Package: Open Tools for Urban, Regional, and Neighborhood Science;,citation_abstract=Understanding neighborhood context is critical for social science research, public policy analysis, and urban planning. The social meaning, formal definition, and formal operationalization of “neighborhood” depends on the study or application, however, so neighborhood analysis and modeling requires both flexibility and adherence to a formal pipeline. Maintaining that balance is challenging for a variety of reasons. To address those challenges, geosnap , the Geospatial Neighborhood Analysis Package provides a suite of tools for exploring, modeling, and visualizing the social context and spatial extent of neighborhoods and regions over time. It brings together state-of-the-art techniques from geodemographics, regionalization, spatial data science, and segregation analysis to support social science research, public policy analysis, and urban planning. It provides a simple interface tailored to formal analysis of spatiotemporal urban data.;,citation_author=Elijah Knaap;,citation_author=Sergio Rey;,citation_publication_date=2024-07-10;,citation_cover_date=2024-07-10;,citation_year=2024;,citation_fulltext_html_url=https://doi.curvenote.com/10.25080/FVWM4182;,citation_doi=10.25080/FVWM4182;">
+<meta name="citation_reference" content="citation_title=The PySAL Ecosystem: Philosophy and Implementation;,citation_abstract=PySAL is a library for geocomputation and spatial data science. Written in Python, the library has a long history of supporting novel scholarship and broadening methodological impacts far afield of academic work. Recently, many new techniques, methods of analyses, and development modes have been implemented, making the library much larger and more encompassing than that previously discussed in the literature. As such, we provide an introduction to the library as it stands now, as well as the scientific and conceptual underpinnings of its core set of components. Finally, we provide a prospective look at the library’s future evolution.;,citation_author=Sergio J. Rey;,citation_author=Luc Anselin;,citation_author=Pedro Amaral;,citation_author=Dani Arribas-Bel;,citation_author=Renan Xavier Cortes;,citation_author=James David Gaboardi;,citation_author=Wei Kang;,citation_author=Elijah Knaap;,citation_author=Ziqi Li;,citation_author=Stefanie Lumnitz;,citation_author=Taylor M. Oshan;,citation_author=Hu Shao;,citation_author=Levi John Wolf;,citation_publication_date=2021-06;,citation_cover_date=2021-06;,citation_year=2021;,citation_fulltext_html_url=https://onlinelibrary.wiley.com/doi/10.1111/gean.12276;,citation_doi=10.1111/gean.12276;,citation_issn=0016-7363;,citation_journal_title=Geographical Analysis;">
+<meta name="citation_reference" content="citation_title=Tidycensus: Load US census boundary and attribute data as ’tidyverse’ and ’sf’-ready data frames;,citation_author=Kyle Walker;,citation_author=Matt Herman;,citation_publication_date=2024;,citation_cover_date=2024;,citation_year=2024;,citation_fulltext_html_url=https://walker-data.com/tidycensus/;">
 </head>
 
 <body>
@@ -185,7 +210,7 @@ entire analysis (including building the paper) via github codespaces.
 </section>
 <section id="methods" class="level1">
 <h1>Methods</h1>
-<p>Two classic models in spatial analysis are the <em>Spatial Lag Model</em>, defined as</p>
+<p>We often say that <em>spatial is special</em> because of two phenomena known as spatial dependence and spatial heterogeneity <span class="citation" data-cites="anselinWhatSpecialSpatial1989 anselinSpatialEconometricsMethods1988">(<a href="#ref-anselinWhatSpecialSpatial1989" role="doc-biblioref">Anselin 1989</a>, <a href="#ref-anselinSpatialEconometricsMethods1988" role="doc-biblioref">1988</a>)</span>. Two classic spatial econometric models designed to handle these effects include the<em>Spatial Lag Model</em>, defined as</p>
 <p><span class="math display">\[y = \rho Wy + \beta X + \epsilon\]</span></p>
 <p>and the <em>Spatial Error Model</em> defined as</p>
 <!-- use html comments for in-text notes.
@@ -203,6 +228,7 @@ y &amp; = \beta X + u\\
 u &amp; = \lambda W u + \epsilon
 \end{split}
 \]</span></p>
+<p>The real point being that you can dropdown to real latex any time you need to. If necessary, add the library in the <code>header-includes</code> section of the quarto yaml. For example if you needed aligned equations, you can <code>split</code> with ampersands where you want to set the alignment</p>
 </section>
 <section id="results" class="level1">
 <h1>Results</h1>
@@ -343,6 +369,7 @@ Note
 <p>This is kinda hacky because it relies on an iFrame that requires the embedded map to be available the relative URL set above (you cant download this html file and expect it to work). The <code>embed-resources</code> option in quarto wont work for an iframe either.</p>
 </div>
 </div>
+<p>In the end, we seamlessly weave together <code>geosnap</code> <span class="citation" data-cites="knaap2024GeosnapGeospatial">(<a href="#ref-knaap2024GeosnapGeospatial" role="doc-biblioref">Knaap and Rey 2024</a>)</span>, PySAL <span class="citation" data-cites="rey2021PySALEcosystem">(<a href="#ref-rey2021PySALEcosystem" role="doc-biblioref">Rey et al. 2021</a>)</span>, and <code>tidycensus</code> <span class="citation" data-cites="tidycensus">(<a href="#ref-tidycensus" role="doc-biblioref">Walker and Herman 2024</a>)</span>. Use the best tool for the job, then let quarto sew things together.</p>
 </section>
 <section id="discussion" class="level1">
 <h1>Discussion</h1>
@@ -350,11 +377,28 @@ Note
 <section id="conclusion" class="level1">
 <h1>Conclusion</h1>
 </section>
-<section id="references" class="level1">
-<h1>References</h1>
+<section id="references" class="level1 unnumbered">
+
+
 </section>
 
-</main>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-anselinSpatialEconometricsMethods1988" class="csl-entry" role="listitem">
+Anselin, Luc. 1988. <em>Spatial <span>Econometrics</span>: <span>Methods</span> and <span>Models</span></em>. <em>Operational Regional Science Series</em>. Vol. 4. Dordrecht: Springer Netherlands. <a href="https://doi.org/10.1007/978-94-015-7799-1">https://doi.org/10.1007/978-94-015-7799-1</a>.
+</div>
+<div id="ref-anselinWhatSpecialSpatial1989" class="csl-entry" role="listitem">
+———. 1989. <span>“What Is Special about Spatial Data?: <span>Alternative</span> Perspectives on Spatial Data Analysis.”</span> <em>Santa Barbara, CA, NCGIA Report</em>, 84–89. <a href="https://escholarship.org/uc/item/3ph5k0d4">https://escholarship.org/uc/item/3ph5k0d4</a>.
+</div>
+<div id="ref-knaap2024GeosnapGeospatial" class="csl-entry" role="listitem">
+Knaap, Elijah, and Sergio Rey. 2024. <span>“Geosnap: <span>The Geospatial Neighborhood Analysis Package</span>: <span>Open Tools</span> for <span>Urban</span>, <span>Regional</span>, and <span>Neighborhood Science</span>.”</span> In. Tacoma, Washington. <a href="https://doi.org/10.25080/FVWM4182">https://doi.org/10.25080/FVWM4182</a>.
+</div>
+<div id="ref-rey2021PySALEcosystem" class="csl-entry" role="listitem">
+Rey, Sergio J., Luc Anselin, Pedro Amaral, Dani Arribas-Bel, Renan Xavier Cortes, James David Gaboardi, Wei Kang, et al. 2021. <span>“The <span>PySAL Ecosystem</span>: <span>Philosophy</span> and <span>Implementation</span>.”</span> <em>Geographical Analysis</em>, June, gean.12276. <a href="https://doi.org/10.1111/gean.12276">https://doi.org/10.1111/gean.12276</a>.
+</div>
+<div id="ref-tidycensus" class="csl-entry" role="listitem">
+Walker, Kyle, and Matt Herman. 2024. <em>Tidycensus: Load US Census Boundary and Attribute Data as ’Tidyverse’ and ’Sf’-Ready Data Frames</em>. <a href="https://walker-data.com/tidycensus/">https://walker-data.com/tidycensus/</a>.
+</div>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -438,6 +482,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -548,6 +594,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -774,7 +821,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","selector":".lightbox","openEffect":"zoom","loop":false,"closeEffect":"zoom"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {

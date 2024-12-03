@@ -1,4 +1,8 @@
-Two classic models in spatial analysis are the *Spatial Lag Model*, defined as
+We often say that *spatial is special* because of two phenomena known as spatial
+dependence and spatial heterogeneity
+[@anselinWhatSpecialSpatial1989; @anselinSpatialEconometricsMethods1988]. Two
+classic spatial econometric models designed to handle these effects include
+the*Spatial Lag Model*, defined as
 
 $$y = \rho Wy + \beta X + \epsilon$$
 
@@ -20,3 +24,8 @@ y & = \beta X + u\\
 u & = \lambda W u + \epsilon
 \end{split}
 $$
+
+The real point being that you can dropdown to real latex any time you need to.
+If necessary, add the library in the `header-includes` section of the quarto
+yaml. For example if you needed aligned equations, you can `split` with
+ampersands where you want to set the alignment
