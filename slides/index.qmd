@@ -12,19 +12,150 @@ author:
 format:
   revealjs:
     footer: "Elijah Knaap, Center for Open Geographical Science @ SDSU"
-    self-contained: true
+    self-contained: true  # i usually self-contain everything in case conference wifi sucks
     embed-resources: true
     self-contained-math: true
-date: today 
+date: today  # fix to a real date when final
 ---
 
-# why
+# why {.smaller}
 
-# setup
+- use `pixi` to recreate the *exact* same environment anywhere (quickly)
+- work on the project locally, in a virtual machine, or in a cloud-based container
+- include all necessary tooling for spatial analysis & academic writing (or teaching!)
 
-# run
+# setup {.smaller}
 
-# write
+this is a template repository; you can run it as-is to get a feel for the workflow, or clone and edit for your needs
 
-# publish
+## working locally {.smaller}
+
+![](_fig_clone_http.png)
+
+go somewhere on your computer you keep your projects, then clone (or fork *then* clone to run from your own copy)
+
+- `cd projects`
+- `git clone https://github.com/knaaptime/rypyrx.git`
+
+## working in a cloud-based container
+
+To open this repository exactly as it appears, just click the button
+
+[![](https://github.com/codespaces/badge.svg)](https://codespaces.new/knaaptime/rypyrx)
+
+## from your own repository (1) {.smaller}
+
+if you want to start a github codespace from another project (like if you forked your own version of this repo)
+
+![](_fig_clone.png)
+
+## from your own repository (2) {.smaller}
+
+![](_fig_create_codespace.png)
+
+
+## working in a local devcontainer (1)
+
+- install vscode
+- install docker
+
+## working in a local devcontainer (2)
+
+- open vscode
+- click the little blue icon in the bottom left
+
+![](_fig_remoteicon.png)
+
+## working in a local devcontainer (3)
+
+click 'reopen in container'
+
+![](_fig_reopen.png)
+
+# run {.smaller}
+
+if you need to add/change dependencies, edit the `pixi.toml` file
+
+## the `notebooks` directory {.smaller}
+
+I like jupyter notebooks for doing my main analysis
+
+- the existing `pixi.toml` file includes both Python and R kernels
+  - you can install R stuff outside conda-forge using the usual `install.packages`, but you won't have the lockfile for those packages...
+- the notebooks show how to use both languages and generate output for the same paper
+
+## run jupyter
+
+- `cd notebooks`
+- `pixi run jupyter lab`
+
+
+## edit notebooks
+
+![](_fig_notebooks.png)
+
+
+# write {.smaller}
+
+use `quarto` to manage file execution order and generate outputs
+
+## the `paper` directory  {.smaller}
+
+this directory stores a standalone quarto project
+
+- use the `_quarto.yml` file to include any pieces you need executed
+- i like to split academic drafts into files by section, the use `include`s to wrap them together
+- when submitting latex to journals, they often require all additional files (figures, bibs) be in the *same directory* as the main file. That usually creates a ton of files in one directory which i hate, so i use prefixes to differentiate file types
+
+## the index.qmd file {.smaller}
+
+I use a single index.qmd file as the main source document, then include each section as a different file
+
+![](_fig_paperdir.png)
+
+## generate the paper
+
+- `cd paper`
+- `pixi run quarto render`
+
+# publish {.smaller}
+
+There is a preconfigured github-action recipe in the `.github` directory that will serve a static website from the `slides` directory
+
+(edit the names if you like, but i usually have slides to publish). Anything in this directory will be served, so you can also toss your paper in pdf/html in here when it's ready for the public
+
+## configure the repository
+
+one small config:
+
+## go to the repository settings
+
+![](_fig_settings.png)
+
+## go to `pages` settings  {.smaller}
+
+use github actions
+
+![](_fig_gha.png)
+
+the config file is already setup. You're done.
+
+## edit the slides
+
+the `slides` directory is another standalone `quarto` project
+
+- `cd slides`
+- edit the index.qmd file
+- `pixi run quarto render`
+
+## commit the directory {.smaller}
+
+commit everything you want public in `slides`, then push it up.
+
+- `cd slides`
+- `git add .`
+- `git commit -m 'add slides'`
+- `git push`
+
+everything will be available at https://{{yourgithubname}}.github.io/{{yourprojectname}}
 

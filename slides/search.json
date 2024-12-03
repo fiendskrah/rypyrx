@@ -1,0 +1,128 @@
+[
+  {
+    "objectID": "index.html#working-locally",
+    "href": "index.html#working-locally",
+    "title": "Reproducible Research Environments",
+    "section": "working locally",
+    "text": "working locally\n\ngo somewhere on your computer you keep your projects, then clone (or fork then clone to run from your own copy)\n\ncd projects\ngit clone https://github.com/knaaptime/rypyrx.git"
+  },
+  {
+    "objectID": "index.html#working-in-a-cloud-based-container",
+    "href": "index.html#working-in-a-cloud-based-container",
+    "title": "Reproducible Research Environments",
+    "section": "working in a cloud-based container",
+    "text": "working in a cloud-based container\nTo open this repository exactly as it appears, just click the button"
+  },
+  {
+    "objectID": "index.html#from-your-own-repository-1",
+    "href": "index.html#from-your-own-repository-1",
+    "title": "Reproducible Research Environments",
+    "section": "from your own repository (1)",
+    "text": "from your own repository (1)\nif you want to start a github codespace from another project (like if you forked your own version of this repo)"
+  },
+  {
+    "objectID": "index.html#from-your-own-repository-2",
+    "href": "index.html#from-your-own-repository-2",
+    "title": "Reproducible Research Environments",
+    "section": "from your own repository (2)",
+    "text": "from your own repository (2)"
+  },
+  {
+    "objectID": "index.html#working-in-a-local-devcontainer-1",
+    "href": "index.html#working-in-a-local-devcontainer-1",
+    "title": "Reproducible Research Environments",
+    "section": "working in a local devcontainer (1)",
+    "text": "working in a local devcontainer (1)\n\ninstall vscode\ninstall docker"
+  },
+  {
+    "objectID": "index.html#working-in-a-local-devcontainer-2",
+    "href": "index.html#working-in-a-local-devcontainer-2",
+    "title": "Reproducible Research Environments",
+    "section": "working in a local devcontainer (2)",
+    "text": "working in a local devcontainer (2)\n\nopen vscode\nclick the little blue icon in the bottom left"
+  },
+  {
+    "objectID": "index.html#working-in-a-local-devcontainer-3",
+    "href": "index.html#working-in-a-local-devcontainer-3",
+    "title": "Reproducible Research Environments",
+    "section": "working in a local devcontainer (3)",
+    "text": "working in a local devcontainer (3)\nclick ‘reopen in container’"
+  },
+  {
+    "objectID": "index.html#the-notebooks-directory",
+    "href": "index.html#the-notebooks-directory",
+    "title": "Reproducible Research Environments",
+    "section": "the notebooks directory",
+    "text": "the notebooks directory\nI like jupyter notebooks for doing my main analysis\n\nthe existing pixi.toml file includes both Python and R kernels\n\nyou can install R stuff outside conda-forge using the usual install.packages, but you won’t have the lockfile for those packages…\n\nthe notebooks show how to use both languages and generate output for the same paper"
+  },
+  {
+    "objectID": "index.html#run-jupyter",
+    "href": "index.html#run-jupyter",
+    "title": "Reproducible Research Environments",
+    "section": "run jupyter",
+    "text": "run jupyter\n\ncd notebooks\npixi run jupyter lab"
+  },
+  {
+    "objectID": "index.html#edit-notebooks",
+    "href": "index.html#edit-notebooks",
+    "title": "Reproducible Research Environments",
+    "section": "edit notebooks",
+    "text": "edit notebooks"
+  },
+  {
+    "objectID": "index.html#the-paper-directory",
+    "href": "index.html#the-paper-directory",
+    "title": "Reproducible Research Environments",
+    "section": "the paper directory",
+    "text": "the paper directory\nthis directory stores a standalone quarto project\n\nuse the _quarto.yml file to include any pieces you need executed\ni like to split academic drafts into files by section, the use includes to wrap them together\nwhen submitting latex to journals, they often require all additional files (figures, bibs) be in the same directory as the main file. That usually creates a ton of files in one directory which i hate, so i use prefixes to differentiate file types"
+  },
+  {
+    "objectID": "index.html#the-index.qmd-file",
+    "href": "index.html#the-index.qmd-file",
+    "title": "Reproducible Research Environments",
+    "section": "the index.qmd file",
+    "text": "the index.qmd file\nI use a single index.qmd file as the main source document, then include each section as a different file"
+  },
+  {
+    "objectID": "index.html#generate-the-paper",
+    "href": "index.html#generate-the-paper",
+    "title": "Reproducible Research Environments",
+    "section": "generate the paper",
+    "text": "generate the paper\n\ncd paper\npixi run quarto render"
+  },
+  {
+    "objectID": "index.html#configure-the-repository",
+    "href": "index.html#configure-the-repository",
+    "title": "Reproducible Research Environments",
+    "section": "configure the repository",
+    "text": "configure the repository\none small config:"
+  },
+  {
+    "objectID": "index.html#go-to-the-repository-settings",
+    "href": "index.html#go-to-the-repository-settings",
+    "title": "Reproducible Research Environments",
+    "section": "go to the repository settings",
+    "text": "go to the repository settings"
+  },
+  {
+    "objectID": "index.html#go-to-pages-settings",
+    "href": "index.html#go-to-pages-settings",
+    "title": "Reproducible Research Environments",
+    "section": "go to pages settings",
+    "text": "go to pages settings\nuse github actions\n\nthe config file is already setup. You’re done."
+  },
+  {
+    "objectID": "index.html#edit-the-slides",
+    "href": "index.html#edit-the-slides",
+    "title": "Reproducible Research Environments",
+    "section": "edit the slides",
+    "text": "edit the slides\nthe slides directory is another standalone quarto project\n\ncd slides\nedit the index.qmd file\npixi run quarto render"
+  },
+  {
+    "objectID": "index.html#commit-the-directory",
+    "href": "index.html#commit-the-directory",
+    "title": "Reproducible Research Environments",
+    "section": "commit the directory",
+    "text": "commit the directory\ncommit everything you want public in slides, then push it up.\n\ncd slides\ngit add .\ngit commit -m 'add slides'\ngit push\n\neverything will be available at https://{{yourgithubname}}.github.io/{{yourprojectname}}"
+  }
+]
