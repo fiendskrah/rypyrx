@@ -9,8 +9,9 @@ manuscript:
 
 format:
   pdf:
-    output-file: rypyr
-  html: default
+    output-file: rypyrx
+  html: 
+    output-file: rypyrx
 execute:
   echo: true
   cache: true

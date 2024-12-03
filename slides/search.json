@@ -7,6 +7,13 @@
     "text": "what (tl;dr)\n\nthis repo demonstrates a reproducible research project that can (should!) run anywhere, including just in a github codespaces instance (coding on your ipad!)\nthis also works nicely for teaching workshops\nthe bones are just pixi and quarto\nthe magic is the .devcontainer and .github configuration files"
   },
   {
+    "objectID": "index.html#end-result",
+    "href": "index.html#end-result",
+    "title": "Reproducible Research Environments",
+    "section": "end result",
+    "text": "end result\n\nmix and match languages\ninstall binary deps (gdal and friends) in one go\npdf like this\nhtml like this"
+  },
+  {
     "objectID": "index.html#working-locally",
     "href": "index.html#working-locally",
     "title": "Reproducible Research Environments",

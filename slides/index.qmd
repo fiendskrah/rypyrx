@@ -20,8 +20,12 @@ date: today  # fix to a real date when final
 
 # why {.smaller}
 
-- use `pixi` to recreate the *exact* same environment anywhere (quickly)
-- work on the project locally, in a virtual machine, or in a cloud-based container
+- use [`pixi`](https://pixi.sh/latest/) to recreate the *exact* same environment anywhere (quickly)
+- use [`quarto`](https://quarto.org/) to execute and build
+- use docker and devcontainers to work anywhere
+  - locally
+  - in a virtual machine
+  - in a cloud-based container
 - include all necessary tooling for spatial analysis & academic writing (or teaching!)
 
 ## what (tl;dr) {.smaller}
@@ -33,6 +37,13 @@ date: today  # fix to a real date when final
  
 ![](_fig_yamls.png)
 
+## end result
+
+- mix and match languages
+- install binary deps (gdal and friends) in one go
+- [pdf like this](rypyrx.pdf)
+- [html like this](rypyrx.html)
+ 
 
 # setup {.smaller}
 
