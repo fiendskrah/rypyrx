@@ -27,11 +27,13 @@ contiguity rule. But @fig-sdmap shows up differently depending on the output,
 thanks to quarto's conditional include syntax (awesome).
 
 ::: {.content-visible when-format="pdf"}
-![SD Map](_fig_sdmap.png){#fig-sdmap}
+![Rook Contiguity Graph for SD Blockgroups](_fig_sdmap.png){#fig-sdmap}
 :::
 
 ::: {.content-visible when-format="html" #fig-sdmap}
 <iframe width="780" height="500" src="_fig_sdmap.html"></iframe>
+
+Rook Contiguity Graph for SD Blockgroups
 :::
 
 ::: {.callout-note}
