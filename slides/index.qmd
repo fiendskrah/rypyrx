@@ -24,6 +24,16 @@ date: today  # fix to a real date when final
 - work on the project locally, in a virtual machine, or in a cloud-based container
 - include all necessary tooling for spatial analysis & academic writing (or teaching!)
 
+## what (tl;dr) {.smaller}
+
+- this repo demonstrates a reproducible research project that can (should!) run anywhere, including just in a github codespaces instance (coding on your ipad!)
+- this also works nicely for teaching workshops
+- the bones are just `pixi` and `quarto`
+- the magic is the `.devcontainer` and `.github` configuration files
+ 
+![](_fig_yamls.png)
+
+
 # setup {.smaller}
 
 this is a template repository; you can run it as-is to get a feel for the workflow, or clone and edit for your needs
@@ -118,6 +128,15 @@ I use a single index.qmd file as the main source document, then include each sec
 - `cd paper`
 - `pixi run quarto render`
 
+## output {.smaller}
+
+the output will be rendered to the default location at `paper/_manuscript/`
+
+configure any preferences in the _quarto.yml file. Mine are
+
+- the default pdf file has the same name as the project (rypryx.pdf in this case)
+- the default html file is called `index.html` to make it easier to serve
+
 # publish {.smaller}
 
 There is a preconfigured github-action recipe in the `.github` directory that will serve a static website from the `slides` directory
@@ -159,3 +178,6 @@ commit everything you want public in `slides`, then push it up.
 
 everything will be available at https://{{yourgithubname}}.github.io/{{yourprojectname}}
 
+# more
+
+use quarto extensions to make this look nice.

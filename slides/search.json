@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "index.html#what-tldr",
+    "href": "index.html#what-tldr",
+    "title": "Reproducible Research Environments",
+    "section": "what (tl;dr)",
+    "text": "what (tl;dr)\n\nthis repo demonstrates a reproducible research project that can (should!) run anywhere, including just in a github codespaces instance (coding on your ipad!)\nthis also works nicely for teaching workshops\nthe bones are just pixi and quarto\nthe magic is the .devcontainer and .github configuration files"
+  },
+  {
     "objectID": "index.html#working-locally",
     "href": "index.html#working-locally",
     "title": "Reproducible Research Environments",
@@ -89,6 +96,13 @@
     "title": "Reproducible Research Environments",
     "section": "generate the paper",
     "text": "generate the paper\n\ncd paper\npixi run quarto render"
+  },
+  {
+    "objectID": "index.html#output",
+    "href": "index.html#output",
+    "title": "Reproducible Research Environments",
+    "section": "output",
+    "text": "output\nthe output will be rendered to the default location at paper/_manuscript/\nconfigure any preferences in the _quarto.yml file. Mine are\n\nthe default pdf file has the same name as the project (rypryx.pdf in this case)\nthe default html file is called index.html to make it easier to serve"
   },
   {
     "objectID": "index.html#configure-the-repository",

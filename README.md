@@ -33,10 +33,7 @@ To run locally:
 To run in codespaces:
 
 - click the 'open in codespaces' button above
-- crank the machine to 4gb (not strictly necessary but you'll want more than 2gb)
-![VM size](docs/cores.png)
-
-
+  - the default config will include at least 4 cores (dont go below 16gb memory), but you can crank it up for better performance
 
 `pixi install`
 
