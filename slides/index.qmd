@@ -60,11 +60,21 @@ go somewhere on your computer you keep your projects, then clone (or fork *then*
 - `cd projects`
 - `git clone https://github.com/knaaptime/rypyrx.git`
 
-## working in a cloud-based container
+## working in a cloud-based container (codespaces)
 
 To open this repository exactly as it appears, just click the button
 
 [![](https://github.com/codespaces/badge.svg)](https://codespaces.new/knaaptime/rypyrx)
+
+(you can use the same config elsewhere than github, but this is is nice)
+
+## working in codespaces
+
+wait for the VM to finish building, then click the plus to open a new terminal
+
+![](_fig_new_terminal.png)
+
+then continue with the `pixi run` commands
 
 ## from your own repository (1) {.smaller}
 

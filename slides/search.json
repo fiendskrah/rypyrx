@@ -21,11 +21,18 @@
     "text": "working locally\n\ngo somewhere on your computer you keep your projects, then clone (or fork then clone to run from your own copy)\n\ncd projects\ngit clone https://github.com/knaaptime/rypyrx.git"
   },
   {
-    "objectID": "index.html#working-in-a-cloud-based-container",
-    "href": "index.html#working-in-a-cloud-based-container",
+    "objectID": "index.html#working-in-a-cloud-based-container-codespaces",
+    "href": "index.html#working-in-a-cloud-based-container-codespaces",
     "title": "Reproducible Research Environments",
-    "section": "working in a cloud-based container",
-    "text": "working in a cloud-based container\nTo open this repository exactly as it appears, just click the button"
+    "section": "working in a cloud-based container (codespaces)",
+    "text": "working in a cloud-based container (codespaces)\nTo open this repository exactly as it appears, just click the button\n\n(you can use the same config elsewhere than github, but this is is nice)"
+  },
+  {
+    "objectID": "index.html#working-in-codespaces",
+    "href": "index.html#working-in-codespaces",
+    "title": "Reproducible Research Environments",
+    "section": "working in codespaces",
+    "text": "working in codespaces\nwait for the VM to finish building, then click the plus to open a new terminal\n\nthen continue with the pixi run commands"
   },
   {
     "objectID": "index.html#from-your-own-repository-1",
