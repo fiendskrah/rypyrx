@@ -18,7 +18,7 @@ in the html output and use a static map in the pdf.
 
 ![California Counties](_fig_ggmap.png){#fig-counties width=60%}
 
-Everyone from the `R` world will recognize t@fig-counties as coming from
+Everyone from the `R` world will recognize @fig-counties as coming from
 `ggplot`. It shows up either way. But the blockgroups in San Diego show up
 differently depending on the output.
 
@@ -27,7 +27,7 @@ contiguity rule. But @fig-sdmap shows up differently depending on the output,
 thanks to quarto's conditional include syntax (awesome).
 
 ::: {.content-visible when-format="pdf"}
-![Rook Contiguity Graph for SD Blockgroups](_fig_sdmap.png){#fig-sdmap}
+![Rook Contiguity Graph for SD Blockgroups](_fig_sdmap.png){#fig-sdmap width=50%}
 :::
 
 ::: {.content-visible when-format="html" #fig-sdmap}
