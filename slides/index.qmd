@@ -68,13 +68,15 @@ To open this repository exactly as it appears, just click the button
 
 (you can use the same config elsewhere than github, but this is is nice)
 
-## working in codespaces
+## working in codespaces {.smaller}
 
 wait for the VM to finish building, then click the plus to open a new terminal
 
 ![](_fig_new_terminal.png)
 
 then continue with the `pixi run` commands
+
+(currently you need `pixi run quarto render paper --latex-engine=tectonic` or similar because pixi's sandboxing gets in quarto's way of finding tinytex 🤷‍♂️)
 
 ## from your own repository (1) {.smaller}
 

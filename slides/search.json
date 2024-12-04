@@ -32,7 +32,7 @@
     "href": "index.html#working-in-codespaces",
     "title": "Reproducible Research Environments",
     "section": "working in codespaces",
-    "text": "working in codespaces\nwait for the VM to finish building, then click the plus to open a new terminal\n\nthen continue with the pixi run commands"
+    "text": "working in codespaces\nwait for the VM to finish building, then click the plus to open a new terminal\n\nthen continue with the pixi run commands\n(currently you need pixi run quarto render paper --latex-engine=tectonic or similar because pixi’s sandboxing gets in quarto’s way of finding tinytex 🤷‍♂️)"
   },
   {
     "objectID": "index.html#from-your-own-repository-1",
