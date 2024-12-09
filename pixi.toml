@@ -9,8 +9,8 @@ version = "0.1.0"
 
 [dependencies]
 python = ">=3.12"
-jupyter = "*"
 jupyterlab = "*"
+xeus-python = "*"  # the xeus kernel is faster
 ipywidgets = "*"
 jupyterlab_widgets = "*"
 pandas = ">=1.0"
