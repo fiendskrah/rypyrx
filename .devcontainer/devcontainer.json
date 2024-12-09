@@ -15,6 +15,7 @@
         "ms-toolsai.jupyter-renderers",
         "ms-toolsai.jupyter",
         "ms-toolsai.vscode-jupyter-cell-tags",
+        "ms-vsliveshare.vsliveshare",
         "charliermarsh.ruff",
         "GitHub.copilot",
         "njpwerner.autodocstring",
