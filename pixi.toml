@@ -32,7 +32,7 @@ lonboard = "*"
 h3-py = "*"
 rpy2 = "*"
 # R deps
-r-irkernel = "*"
+xeus-r = "*"  # use the xeus kernel
 r-tidymodels = "*"
 #r-spdep = "*"  # sfdep hasn't made it onto conda-forge yet
 r-nlme = "*"
