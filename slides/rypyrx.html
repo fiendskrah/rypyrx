@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.39">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Elijah Knaap">
 <meta name="author" content="Another Person">
-<meta name="dcterms.date" content="2024-12-03">
+<meta name="dcterms.date" content="2024-12-06">
 <meta name="keywords" content="reproducibility, open science">
 
 <title>A Reproducible Paper</title>
@@ -23,6 +23,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 /* CSS for citations */
 div.csl-bib-body { }
@@ -53,10 +87,10 @@ div.csl-indent {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-81e35ebdb4125010edbabe6010586085.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -98,10 +132,10 @@ entire analysis (including building the paper) via github codespaces.
 <meta name="citation_keywords" content="reproducibility,open science">
 <meta name="citation_author" content="Elijah Knaap">
 <meta name="citation_author" content="Another Person">
-<meta name="citation_publication_date" content="2024-12-03">
-<meta name="citation_cover_date" content="2024-12-03">
+<meta name="citation_publication_date" content="2024-12-06">
+<meta name="citation_cover_date" content="2024-12-06">
 <meta name="citation_year" content="2024">
-<meta name="citation_online_date" content="2024-12-03">
+<meta name="citation_online_date" content="2024-12-06">
 <meta name="citation_language" content="en">
 <meta name="citation_reference" content="citation_title=Spatial Econometrics: Methods and Models;,citation_abstract=Graduate-level textbook in spatial statistics, econometrics, and regional analysis concentrates on the relevance of spatial effects to general issues of model specification, estimation, and other inference, taking a model-driven rather than a data-driven approach. Includes new methods and findings, and many new empirical examples. Introduces the formal probabilistic framework for the analysis of spatial processes. Covers estimation and hypothesis testing, discussing situations where the data are characterized by spatial dependence, the data are characterized by spatial heterogeneity, and where a time-space model is used. Outlines methodological problems arising in estimation and hypothesis testing. Provides an extensive empirical illustration for the various estimators and tests. Examines issues of model validation, discussing two types of specification tests: tests on spatial common factors and tests on non-nested hypotheses. Discusses model selection in spatial econometric models. Suggests directions for future research. Anselin is with the Department of Geography and Economics at the University of California, Santa Barbara. Index.;,citation_author=Luc Anselin;,citation_publication_date=1988;,citation_cover_date=1988;,citation_year=1988;,citation_fulltext_html_url=http://www.amazon.com/Spatial-Econometrics-Methods-Operational-Regional/dp/9024737354;,citation_doi=10.1007/978-94-015-7799-1;,citation_isbn=978-90-481-8311-1;,citation_issn=00130095;,citation_volume=4;,citation_book_title=Operational Regional Science Series;">
 <meta name="citation_reference" content="citation_title=What is special about spatial data?: Alternative perspectives on spatial data analysis;,citation_author=Luc Anselin;,citation_publication_date=1989;,citation_cover_date=1989;,citation_year=1989;,citation_fulltext_html_url=https://escholarship.org/uc/item/3ph5k0d4;,citation_journal_title=Santa Barbara, CA, NCGIA Report;">
@@ -150,7 +184,7 @@ entire analysis (including building the paper) via github codespaces.
                 <div>
             <div class="quarto-title-meta-heading">Published</div>
             <div class="quarto-title-meta-contents">
-              <p class="date">December 3, 2024</p>
+              <p class="date">December 6, 2024</p>
             </div>
           </div>
           
@@ -204,13 +238,18 @@ entire analysis (including building the paper) via github codespaces.
 
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
+<p>Sometimes people think I know what i’m doing.</p>
+<p></p><div id="tweet-40216"></div><script>tweet={"url":"https:\/\/twitter.com\/kyle_e_walker\/status\/1816892271369027652","author_name":"Kyle Walker","author_url":"https:\/\/twitter.com\/kyle_e_walker","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"en\" dir=\"ltr\"\u003EEli consistently does some of the most innovative work in spatial data science.  Give his post a read! \u003Ca href=\"https:\/\/t.co\/vduKcwkNI1\"\u003Ehttps:\/\/t.co\/vduKcwkNI1\u003C\/a\u003E\u003C\/p\u003E&mdash; Kyle Walker (@kyle_e_walker) \u003Ca href=\"https:\/\/twitter.com\/kyle_e_walker\/status\/1816892271369027652?ref_src=twsrc%5Etfw\"\u003EJuly 26, 2024\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-40216").innerHTML = tweet["html"];</script><p></p>
+<p>Note for this to be visible, you need to install the quarto extension inside the paper directory with</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> install extension sellorm/quarto-social-embeds</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="literature-review" class="level1">
 <h1>Literature Review</h1>
+<p>You should be using open-source. The practices here are a good way to do ‘full-stack’ open and reproducible science.</p>
 </section>
 <section id="methods" class="level1">
 <h1>Methods</h1>
-<p>We often say that <em>spatial is special</em> because of two phenomena known as spatial dependence and spatial heterogeneity <span class="citation" data-cites="anselinWhatSpecialSpatial1989 anselinSpatialEconometricsMethods1988">(<a href="#ref-anselinWhatSpecialSpatial1989" role="doc-biblioref">Anselin 1989</a>, <a href="#ref-anselinSpatialEconometricsMethods1988" role="doc-biblioref">1988</a>)</span>. Two classic spatial econometric models designed to handle these effects include the<em>Spatial Lag Model</em>, defined as</p>
+<p>We often say that <em>spatial is special</em> because of two phenomena known as spatial dependence and spatial heterogeneity <span class="citation" data-cites="anselinWhatSpecialSpatial1989 anselinSpatialEconometricsMethods1988">(<a href="#ref-anselinWhatSpecialSpatial1989" role="doc-biblioref">Anselin 1989</a>, <a href="#ref-anselinSpatialEconometricsMethods1988" role="doc-biblioref">1988</a>)</span>. Two classic spatial econometric models designed to handle these effects include the <em>Spatial Lag Model</em>, defined as</p>
 <p><span class="math display">\[y = \rho Wy + \beta X + \epsilon\]</span></p>
 <p>and the <em>Spatial Error Model</em> defined as</p>
 <!-- use html comments for in-text notes.
@@ -374,9 +413,12 @@ Note
 </section>
 <section id="discussion" class="level1">
 <h1>Discussion</h1>
+<p>Note that since <code>pixi</code> also installs binary dependencies, the install is complete with tricky deps like GDAL and the correct GCC compiler (hello windows friends!). That lets you R people use <code>install.packages</code> for anything that’s not (yet) on conda and your build system is guaranteed to work (though you wont have a lockfile for those packages).</p>
+<p>Thus, you get a sandboxed install for this project, with <em>all deps on all platforms</em>, and dependencies <em>right inside the repo</em>. Just like <code>npm</code> (if that’s your kinda thing). This is especially nice for making sure your analysis environment isn’t broken by the evolving ecosystem while your paper is under review.</p>
 </section>
 <section id="conclusion" class="level1">
 <h1>Conclusion</h1>
+<p>This is the way.</p>
 </section>
 <section id="references" class="level1 unnumbered">
 
@@ -483,6 +525,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -593,6 +637,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -819,7 +864,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","closeEffect":"zoom","selector":".lightbox","loop":false,"openEffect":"zoom"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {
@@ -855,4 +900,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="https://platform.twitter.com/widgets.js"></script>
 </body></html>

@@ -1,0 +1,1 @@
+You should be using open-source. The practices here are a good way to do 'full-stack' open and reproducible science.

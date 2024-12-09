@@ -1,0 +1,11 @@
+Note that since `pixi` also installs binary dependencies, the install is
+complete with tricky deps like GDAL and the correct GCC compiler (hello windows
+friends!). That lets you R people use `install.packages` for anything that's not
+(yet) on conda and your build system is guaranteed to work (though you wont have
+a lockfile for those packages).
+
+Thus, you get a sandboxed install for this project, with *all deps on all
+platforms*, and dependencies *right inside the repo*. Just like `npm` (if that's
+your kinda thing). This is especially nice for making sure your analysis
+environment isn't broken by the evolving ecosystem while your paper is under
+review.
