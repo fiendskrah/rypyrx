@@ -1,0 +1,9 @@
+Sometimes people think I know what i'm doing. 
+
+{{< tweet kyle_e_walker 1816892271369027652 >}}
+
+Note for this to be visible, you need to install the quarto extension inside the paper directory with
+
+```bash
+quarto install extension sellorm/quarto-social-embeds
+````

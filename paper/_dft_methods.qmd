@@ -2,7 +2,7 @@ We often say that *spatial is special* because of two phenomena known as spatial
 dependence and spatial heterogeneity
 [@anselinWhatSpecialSpatial1989; @anselinSpatialEconometricsMethods1988]. Two
 classic spatial econometric models designed to handle these effects include
-the*Spatial Lag Model*, defined as
+the *Spatial Lag Model*, defined as
 
 $$y = \rho Wy + \beta X + \epsilon$$
 
